@@ -1,27 +1,117 @@
 /* Basic styling to make it look clean */
+html{
+    scroll-padding-top: 60px;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; 
+    background-color: #ffffff;
+    color: #000000;
+    overflow: auto;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 80px;
     text-align: center;
+    border-bottom: 2px solid rgba(0,0,0,0.22);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: #ffffff;
+    overflow: auto;
 }
 
-.content {
-    margin-top: 50px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+h1 {
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+}
+
+p {
+    font-size: 24px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.sidebar {
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgba(0,0,0,0.22);
+}
+
+.profilepic {
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+#ul_section {
+    list-style-type: none;
+    margin-left: 300px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+}
+
+#li_section {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#li_section.active {
+    color: #0D3DEA;
+    text-decoration: underline;
+}
+
+#li_section:hover:not(.active) {
+    color: #0D3DEA;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+section {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 button {
